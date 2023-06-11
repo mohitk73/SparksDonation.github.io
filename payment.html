@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparks Donation</title>
+    <link rel="stylesheet" href="pay.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sparks<span>Donation</span></h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="#">Donation</a>
+            </ul>
+        </nav>
+        </header>
+  
+  <form id="paymentform" onsubmit="submitPayment(event)">
+    <div class="head">
+    <h3>Select Payment Option:</h3>
+  </div>
+    <input type="radio" name="paymentOption" value="creditCard" onchange="togglePaymentFields()"> Credit Card<br>
+    <input type="radio" name="paymentOption" value="netBanking"  onchange="togglePaymentFields()"> Net Banking<br>
+    <input type="radio" name="paymentOption" value="debitCard" onchange="togglePaymentFields()"> Debit Card<br>
+    <input type="radio" name="paymentOption" value="paypal"  onchange="togglePaymentFields()"> PayPal<br>
+    
+    <div id="paymentdetails">
+      <h2>Payment Details:</h2>
+      
+     
+      <div id="creditCardFields">
+        <input type="text" name="cardNumber" placeholder="Card Number"><br>
+        <input type="text" name="expiryDate" placeholder="Expiry Date Ex:00/2025,2026"><br>
+        <input type="text" name="cvv" placeholder="CVV"><br>
+        <input type="text" name="cardholderName" placeholder="Cardholder Name"><br>
+        <input type="number" name="amount" placeholder="Enter amount to send"><br>
+      </div>
+      
+    
+      <div id="netBankingFields">
+        <select name="bank">
+          <option value="bank1">HDFC BANK</option>
+          <option value="bank2">AXIS BANK</option>
+          <option value="bank3">SBI BANK</option>
+        </select><br>
+        <input type="number" name="amount" placeholder="Enter amount to send"><br>
+      </div>
+      
+      <div id="debitCardFields">
+        <input type="text" name="cardNumber" placeholder="Card Number"><br>
+        <input type="text" name="expiryDate" placeholder="Expiry Date"><br>
+        <input type="text" name="cvv" placeholder="CVV"><br>
+        <input type="text" name="cardholderName" placeholder="Cardholder Name"><br>
+        <input type="number" name="amount" placeholder="Enter amount to send"><br>
+      </div>
+      <div id="paypalFields">
+        <button type="button" onclick="redirectToPayPal()">Pay with PayPal</button>
+        <input type="number" name="amount" placeholder="Enter amount to send"><br>
+      </div>
+      
+      <button type="submit">Send Payment</button>
+    </div>
+  </form>
+  <script src="payment.js"></script>
+
+    </body>
+
+</html>

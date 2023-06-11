@@ -1,0 +1,616 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bgimage{
+background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('https://sadsindia.org/wp-content/themes/fusion/images/hero/happy_children_SADS_1920x800.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height:100vh;
+}
+
+
+@media (max-width:426px){
+    html,body{
+        width:100%;
+        height: 100%;
+    }
+    header{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .logo h1{
+        color:white;
+        font-size: 30px;
+    }
+    .logo h1 span{
+        color:lightblue;
+        font-size: 27px;
+    }
+    #navbar{
+        padding:10px;
+    }
+    nav ul  a{
+        text-decoration: none;
+        font-size: 17px;
+        background: transparent;
+        color: white;
+        border: 2px solid grey;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+    nav ul  a:hover{
+        background: red;
+        color:white;
+    }
+    .content{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .content h1{
+        color:white;
+        font-size: 36px;
+       
+    }
+    .content h1 span{
+        color:lightblue;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h2{
+        color:white;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .content h2 span{
+        color:lightblue;
+        margin-top: 10px;
+        font-size: 23px;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h3{
+        color:white;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    .content h3 span{
+        color:lightblue;
+        margin-top: 10px;
+        font-size: 23px;
+        text-shadow: 0 0 4px blue;
+    }
+    .button{
+        margin-top: 25px;
+    }
+    .button a{
+        text-decoration: none;
+        padding:5px 10px;
+        background: red;
+        color:white;
+        font-size: 15px;
+        margin-left: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .button a:hover{
+        background: #2555A6;
+        color:white;
+
+    }
+    footer{
+        background-color: lightslategray;
+    }
+    /*about*/
+    .about{
+        margin-top: 50px;
+    }
+    .about h1{
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 0 0 4px black;
+    }
+    .about h1 span{
+        color:#2555A6;
+    }
+    .about .container{
+        margin-top: 20px;
+        
+    }
+   
+      .about .container .column-1{
+    margin-left:0px;
+      }
+     .column-1 img{
+    width:100%;
+    height:250px;
+    box-shadow: 0 0 12px black;
+    }
+    .column-2{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .column-2 p{
+        font-size:15px;
+        font-weight: 500;
+      margin-right: 10px;
+    }
+    .column-2 p span{
+        font-size: 18px;
+        color:#2555A6;
+    }
+    /*contact*/
+    .contact{
+        margin-top: 100px;
+    }
+    .contact h1{
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 0 0 4px black;
+    }
+    .contact h1 span{
+        color:#2555A6;
+    }
+      form {
+        width:310px;
+        height:auto;
+        margin: 20px auto;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #2555A6;
+        color:white;
+      }
+      
+      input:required:invalid,
+      textarea:required:invalid {
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+      }
+      
+      input:required:valid,
+      textarea:required:valid {
+        border: 1px solid green;
+      }
+}
+
+@media (min-width: 427px) and (max-width: 769px){
+    html,body{
+        width:100%;
+        height: 100%;
+    }
+    header{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .logo h1{
+        color:white;
+        font-size: 35px;
+    }
+    .logo h1 span{
+        color:lightblue;
+        font-size: 35px;
+    }
+    #navbar{
+        padding:10px;
+    }
+    nav ul  a{
+        text-decoration: none;
+        font-size: 25px;
+        background: transparent;
+        color: white;
+        border: 2px solid grey;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+    nav ul  a:hover{
+        background: red;
+        color:white;
+    }
+    .content{
+        margin-top: 125px;
+        margin-left: 40px;
+        width:500px;
+    }
+    .content h1{
+        color:white;
+        font-size: 58px;
+       
+    }
+    .content h1 span{
+        color:lightblue;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h2{
+        color:white;
+        margin-top: 10px;
+        font-size: 27px;
+    }
+    .content h2 span{
+        color:lightblue;
+        margin-top: 10px;
+        font-size: 27px;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h3{
+        color:white;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .content h3 span{
+        color:lightblue;
+        margin-top: 10px;
+        font-size: 23px;
+        text-shadow: 0 0 4px blue;
+    }
+    .button{
+        margin-top: 25px;
+    }
+    .button a{
+        text-decoration: none;
+        padding:5px 10px;
+        background: red;
+        color:white;
+        font-size: 20px;
+        margin-left: 40px;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .button a:hover{
+        background: #2555A6;
+        color:white;
+
+    }
+    footer{
+        background-color: lightslategray;
+        text-align: center;
+    }
+    .about{
+        margin-top: 50px;
+    }
+    .about h1{
+        text-align: center;
+        font-size: 35px;
+        text-shadow: 0 0 4px black;
+    }
+    .about h1 span{
+        color:#2555A6;
+    }
+    .about .container{
+        margin-top: 20px;
+        
+    }
+   
+      .about .container .column-1{
+    margin-left:150px;
+      }
+     .column-1 img{
+    width:500px;
+    height:400px;
+    box-shadow: 0 0 12px black;
+    }
+    .column-2{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .column-2 p{
+        font-size:15px;
+        font-weight: 500;
+      margin-right: 10px;
+    }
+    .column-2 p span{
+        font-size: 18px;
+        color:#2555A6;
+    }
+    /*contact*/
+    .contact{
+        margin-top: 100px;
+    }
+    .contact h1{
+        text-align: center;
+        font-size: 35px;
+        text-shadow: 0 0 4px black;
+    }
+    .contact h1 span{
+        color:#2555A6;
+    }
+      form {
+        max-width: 600px;
+        height:auto;
+        margin: 20px auto;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 26px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #2555A6;
+        color:white;
+      }
+      
+      input:required:invalid,
+      textarea:required:invalid {
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+      }
+      
+      input:required:valid,
+      textarea:required:valid {
+        border: 1px solid green;
+      }
+}
+
+
+@media (min-width: 769px) and (max-width: 2561px){
+    html,body{
+        width:100%;
+        height: 100%;
+    }
+    header{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .logo h1{
+        color:white;
+        font-size: 45px;
+    }
+    .logo h1 span{
+        color:lightblue;
+        font-size: 45px;
+    }
+    #navbar{
+        padding:10px;
+    }
+    nav ul  a{
+        text-decoration: none;
+        font-size: 30px;
+        background: transparent;
+        color: white;
+        border: 2px solid grey;
+        padding: 4px 8px;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+    nav ul  a:hover{
+        background: red;
+        color:white;
+    }
+    .content{
+        margin-top: 130px;
+        margin-left: 40px;
+       width:1000px;
+        
+    }
+    .content h1{
+        color:white;
+        font-size: 83px;
+       
+    }
+    .content h1 span{
+        color:lightblue;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h2{
+        color:white;
+        margin-top: 10px;
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .content h2 span{
+        color: lightblue;
+        margin-top: 10px;
+        font-size: 36px;
+        text-shadow: 0 0 4px blue;
+    }
+    .content h3{
+        color:white;
+        margin-top: 10px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .content h3 span{
+        color:lightblue;
+        margin-top: 10px;
+        font-size: 34px;
+        text-shadow: 0 0 4px blue;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    .button a{
+        text-decoration: none;
+        padding:10px 20px;
+        background: red;
+        color:white;
+        font-size: 25px;
+        margin-left: 40px;
+        border-radius: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .button a:hover{
+        background: #2555A6;
+        color:white;
+
+    }
+    footer{
+        background-color: lightslategray;
+        text-align: center;
+    }
+    footer p{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .about{
+        margin-top: 100px;
+    }
+    .about h1{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 0 0 4px black;
+    }
+    .about h1 span{
+        color:#2555A6;
+    }
+    .about .container{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        
+    }
+   
+      .about .container .column-1{
+    margin-left:120px;
+      }
+     .column-1 img{
+    width:600px;
+    height:400px;
+    box-shadow: 0 0 12px black;
+    }
+    .column-2{
+        top:0;
+        margin-left: 30px;
+    }
+    .column-2 p{
+        font-size:25px;
+        font-weight: 500;
+      margin-right: 10px;
+    }
+    .column-2 p span{
+        font-size: 27px;
+        color:#2555A6;
+        font-weight: 900;
+    }
+/*contact*/
+    .contact{
+        margin-top: 100px;
+    }
+    .contact h1{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 0 0 4px black;
+    }
+    .contact h1 span{
+        color:#2555A6;
+    }
+      form {
+        max-width: 600px;
+        height:auto;
+        margin: 20px auto;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 26px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #2555A6;
+        color:white;
+      }
+      
+      input:required:invalid,
+      textarea:required:invalid {
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+      }
+      
+      input:required:valid,
+      textarea:required:valid {
+        border: 1px solid green;
+      }
+}
